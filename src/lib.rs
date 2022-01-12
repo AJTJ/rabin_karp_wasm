@@ -88,13 +88,8 @@ pub fn find_matches(pattern_as_str: &str, text_as_str: &str) -> Uint32Array {
         end += 1;
     }
 
-    // &matches_found[..]
+    // another possible return method
+    // Box::from(&matches_found[..])
 
     Uint32Array::from(&matches_found[..])
-
-    // println!("response: {:?}", response_array);
-
-    // response_array
-
-    // Box::from(&matches_found[..])
 }
