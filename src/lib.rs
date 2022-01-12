@@ -12,9 +12,8 @@ use wasm_bindgen::prelude::*;
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
-// pub fn find_matches(pattern_as_str: &str, text_as_str: &str) -> Uint32Array {
-// pub fn find_matches(pattern_as_str: &str, text_as_str: &str) -> Box<[u32]> {
 pub fn find_matches(pattern_as_str: &str, text_as_str: &str) -> Uint32Array {
+    // pub fn find_matches(pattern_as_str: &str, text_as_str: &str) -> Vec<u32> {
     fn gen_hash(pattern: &[&str], prime: u32) -> u32 {
         let mut hash = 0;
         for c in pattern.iter() {
@@ -89,11 +88,13 @@ pub fn find_matches(pattern_as_str: &str, text_as_str: &str) -> Uint32Array {
         end += 1;
     }
 
-    let response_array = Uint32Array::from(&matches_found[..]);
+    // &matches_found[..]
+
+    Uint32Array::from(&matches_found[..])
 
     // println!("response: {:?}", response_array);
 
-    response_array
+    // response_array
 
     // Box::from(&matches_found[..])
 }
