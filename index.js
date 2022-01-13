@@ -5,16 +5,16 @@
 console.log("testing js");
 
 // FOR TARGET WEB
-import init, { find_matches } from "./pkg/rabin_karp_wasm.js";
-const runWasm = async () => {
-  await init("./pkg/rabin_karp_wasm_bg.wasm");
-  const matchResult = find_matches("ddd", "aaadddda̐éö̲bbddddd");
-  console.log("IN WEB", { matchResult });
-  document.body.textContent = `matchResult: ${matchResult}`;
-};
-runWasm();
+// import init, { find_matches } from "./pkg/rabin_karp_wasm.js";
+// const runWasm = async () => {
+//   await init("./pkg/rabin_karp_wasm_bg.wasm");
+//   const matchResult = find_matches("ddd", "dddddddda̐éö̲bbddddd");
+//   console.log("IN WEB", { matchResult });
+//   document.body.textContent = `matchResult: ${matchResult}`;
+// };
+// runWasm();
 
 // FOR TARGET NODE
-// const { find_matches } = require("./pkg/rabin_karp_wasm");
-// const matchResult = find_matches("ddd", "aaadddda̐éö̲bbddddd");
-// console.log("IN NODE", { matchResult });
+const { find_matches } = require("./pkg/rabin_karp_wasm");
+const matchResult = find_matches("ddd", "dddddddda̐éö̲bbddddd");
+console.log("IN NODE", { matchResult });
