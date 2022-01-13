@@ -12,6 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "perf_hooks": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8"
   }
 }
