@@ -1,8 +1,8 @@
 ### rabin-karp-wasm
 
 A rust implementation of the rabin-karp rolling hash algorithm for sub-string searching in an npm package.
-repo: https://github.com/AJTJ/rabin_karp_wasm
-npm-package: https://www.npmjs.com/package/rabin-karp-wasm
+- repo: https://github.com/AJTJ/rabin_karp_wasm
+- npm-package: https://www.npmjs.com/package/rabin-karp-wasm
 
 usage:
 ```js
