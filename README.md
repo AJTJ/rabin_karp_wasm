@@ -9,9 +9,8 @@ import { find_matches } from "rabin-karp-wasm";
 let result = find_matches(STRING_PATTERN_TO_SEARCH_FOR, STRING_TO_SEARCH_WITHIN);
 ```
 
-
 TODO:
-- Building out support for multi-character graphemes. Currently only supports single-character graphemes, i.e. the english alphabet.
+- Currently building out support for multi-character graphemes. It currently only supports single-character graphemes, i.e. the english alphabet.
 
-The wasm-pack wrapper around the rabin-karp algorithm I wrote here:
+The original experiment (Now deprecated) began here:
 https://github.com/AJTJ/rabin_karp
