@@ -16,5 +16,5 @@ console.log("testing js");
 
 // FOR TARGET NODE
 const { find_matches } = require("./pkg/rabin_karp_wasm");
-const matchResult = find_matches("ddd", "dddddddda̐éö̲bbddddd");
+const matchResult = find_matches("ddd", "ddddddddbbddddd");
 console.log("IN NODE", { matchResult });
