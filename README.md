@@ -1,3 +1,5 @@
+### rabin-karp-wasm
+
 A rust implementation of the rabin-karp rolling hash algorithm for sub-string searching
 repo: https://github.com/AJTJ/rabin_karp_wasm
 
